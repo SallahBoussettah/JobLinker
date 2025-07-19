@@ -1,0 +1,69 @@
+{
+  "navbar": {
+    "jobSeekers": "For Job Seekers",
+    "employers": "For Employers",
+    "testimonials": "Testimonials",
+    "login": "Log in",
+    "postJob": "Post a Job"
+  },
+  "hero": {
+    "title": {
+      "line1": "Connecting",
+      "line2": "Job Seekers with",
+      "line3": "Employers"
+    },
+    "description": "Create Your CV, and get matched with relevant job opportunities, or post a job and find qualified candidates.",
+    "createCV": "Create Your CV",
+    "postJob": "Post a Job"
+  },
+  "features": {
+    "jobSeekers": {
+      "title": "For Job Seekers",
+      "buildProfile": {
+        "title": "Build Your Profile",
+        "description": "Create a proper and jobliking career, and requirer profit"
+      },
+      "getMatched": {
+        "title": "Get Matched",
+        "description": "Feel exerience and earn in no mimatched job storbanizations."
+      }
+    },
+    "employers": {
+      "title": "For Employers",
+      "postJobs": {
+        "title": "Post Job Offers",
+        "description": "Pent Jonnes offers donotion to specitc jobs in d broard."
+      },
+      "discoverCandidates": {
+        "title": "Discover Candidates",
+        "description": "Post now employe es 8+ candutate candidates"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "quote": "JobLinker made my job search so much easier - found the perfect job in no time!",
+    "name": "Jane Doe",
+    "position": "Marketing Specialist"
+  },
+  "footer": {
+    "joblinker": "JobLinker",
+    "forSeekers": "For Seekers",
+    "forEmployer": "For Employer",
+    "resources": "Resources",
+    "helpCenter": "Help Center",
+    "blog": "Blog",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "contactUs": "Contact Us",
+    "email": "info@joblinker.com",
+    "copyright": "© 2025 JobLinker"
+  },
+  "language": {
+    "en": "English",
+    "fr": "French",
+    "ar": "Arabic"
+  },
+  "direction": "ltr"
+} 

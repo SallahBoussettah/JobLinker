@@ -1,0 +1,69 @@
+{
+  "navbar": {
+    "jobSeekers": "Pour les Chercheurs d'Emploi",
+    "employers": "Pour les Employeurs",
+    "testimonials": "Témoignages",
+    "login": "Connexion",
+    "postJob": "Publier une Offre"
+  },
+  "hero": {
+    "title": {
+      "line1": "Connecter",
+      "line2": "Chercheurs d'Emploi avec",
+      "line3": "Employeurs"
+    },
+    "description": "Créez votre CV et soyez mis en relation avec des offres d'emploi pertinentes, ou publiez une offre et trouvez des candidats qualifiés.",
+    "createCV": "Créer Votre CV",
+    "postJob": "Publier une Offre"
+  },
+  "features": {
+    "jobSeekers": {
+      "title": "Pour les Chercheurs d'Emploi",
+      "buildProfile": {
+        "title": "Créez Votre Profil",
+        "description": "Créez une carrière appropriée et attrayante, et obtenez des avantages"
+      },
+      "getMatched": {
+        "title": "Trouvez des Correspondances",
+        "description": "Acquérez de l'expérience et gagnez dans des emplois parfaitement adaptés."
+      }
+    },
+    "employers": {
+      "title": "Pour les Employeurs",
+      "postJobs": {
+        "title": "Publiez des Offres d'Emploi",
+        "description": "Publiez des offres spécifiques pour des postes dans votre domaine."
+      },
+      "discoverCandidates": {
+        "title": "Découvrez des Candidats",
+        "description": "Accédez maintenant à plus de 8 candidats qualifiés"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "quote": "JobLinker a rendu ma recherche d'emploi tellement plus facile - j'ai trouvé le job parfait en un rien de temps !",
+    "name": "Marie Dupont",
+    "position": "Spécialiste Marketing"
+  },
+  "footer": {
+    "joblinker": "JobLinker",
+    "forSeekers": "Pour les Chercheurs",
+    "forEmployer": "Pour les Employeurs",
+    "resources": "Ressources",
+    "helpCenter": "Centre d'Aide",
+    "blog": "Blog",
+    "legal": "Mentions Légales",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions d'Utilisation",
+    "contactUs": "Contactez-nous",
+    "email": "info@joblinker.com",
+    "copyright": "© 2025 JobLinker"
+  },
+  "language": {
+    "en": "Anglais",
+    "fr": "Français",
+    "ar": "Arabe"
+  },
+  "direction": "ltr"
+} 

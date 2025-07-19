@@ -1,0 +1,69 @@
+{
+  "navbar": {
+    "jobSeekers": "للباحثين عن عمل",
+    "employers": "لأصحاب العمل",
+    "testimonials": "آراء العملاء",
+    "login": "تسجيل الدخول",
+    "postJob": "نشر وظيفة"
+  },
+  "hero": {
+    "title": {
+      "line1": "ربط",
+      "line2": "الباحثين عن عمل مع",
+      "line3": "أصحاب العمل"
+    },
+    "description": "أنشئ سيرتك الذاتية، واحصل على تطابق مع فرص العمل ذات الصلة، أو انشر وظيفة وابحث عن مرشحين مؤهلين.",
+    "createCV": "إنشاء السيرة الذاتية",
+    "postJob": "نشر وظيفة"
+  },
+  "features": {
+    "jobSeekers": {
+      "title": "للباحثين عن عمل",
+      "buildProfile": {
+        "title": "بناء ملفك الشخصي",
+        "description": "إنشاء مسار وظيفي مناسب وجذاب، والحصول على الفوائد"
+      },
+      "getMatched": {
+        "title": "الحصول على التطابق",
+        "description": "اكتسب الخبرة واكسب في وظائف متوافقة تمامًا."
+      }
+    },
+    "employers": {
+      "title": "لأصحاب العمل",
+      "postJobs": {
+        "title": "نشر عروض العمل",
+        "description": "نشر عروض محددة للوظائف في مجالك."
+      },
+      "discoverCandidates": {
+        "title": "اكتشاف المرشحين",
+        "description": "الوصول الآن إلى أكثر من 8 مرشحين مؤهلين"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "آراء العملاء",
+    "quote": "جعل JobLinker بحثي عن وظيفة أسهل بكثير - وجدت الوظيفة المثالية في وقت قصير!",
+    "name": "سارة أحمد",
+    "position": "متخصصة تسويق"
+  },
+  "footer": {
+    "joblinker": "جوب لينكر",
+    "forSeekers": "للباحثين",
+    "forEmployer": "لأصحاب العمل",
+    "resources": "الموارد",
+    "helpCenter": "مركز المساعدة",
+    "blog": "المدونة",
+    "legal": "القانونية",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfService": "شروط الخدمة",
+    "contactUs": "اتصل بنا",
+    "email": "info@joblinker.com",
+    "copyright": "© 2025 جوب لينكر"
+  },
+  "language": {
+    "en": "الإنجليزية",
+    "fr": "الفرنسية",
+    "ar": "العربية"
+  },
+  "direction": "rtl"
+} 
