@@ -9,10 +9,10 @@
   "hero": {
     "title": {
       "line1": "Connecter",
-      "line2": "Chercheurs d'Emploi avec",
-      "line3": "Employeurs"
+      "line2": "les Chercheurs d'Emploi",
+      "line3": "avec les Employeurs"
     },
-    "description": "Créez votre CV et soyez mis en relation avec des offres d'emploi pertinentes, ou publiez une offre et trouvez des candidats qualifiés.",
+    "description": "Créez votre CV et trouvez des opportunités d'emploi pertinentes, ou publiez une offre et trouvez des candidats qualifiés.",
     "createCV": "Créer Votre CV",
     "postJob": "Publier une Offre"
   },
@@ -20,31 +20,240 @@
     "jobSeekers": {
       "title": "Pour les Chercheurs d'Emploi",
       "buildProfile": {
-        "title": "Créez Votre Profil",
+        "title": "Construire Votre Profil",
         "description": "Créez une carrière appropriée et attrayante, et obtenez des avantages"
       },
       "getMatched": {
-        "title": "Trouvez des Correspondances",
-        "description": "Acquérez de l'expérience et gagnez dans des emplois parfaitement adaptés."
+        "title": "Obtenir des Correspondances",
+        "description": "Acquérir de l'expérience et gagner dans des emplois parfaitement adaptés."
       }
     },
     "employers": {
       "title": "Pour les Employeurs",
       "postJobs": {
-        "title": "Publiez des Offres d'Emploi",
-        "description": "Publiez des offres spécifiques pour des postes dans votre domaine."
+        "title": "Publier des Offres d'Emploi",
+        "description": "Publiez des offres spécifiques pour des emplois dans votre domaine."
       },
       "discoverCandidates": {
-        "title": "Découvrez des Candidats",
+        "title": "Découvrir des Candidats",
         "description": "Accédez maintenant à plus de 8 candidats qualifiés"
       }
     }
   },
   "testimonials": {
     "title": "Témoignages",
-    "quote": "JobLinker a rendu ma recherche d'emploi tellement plus facile - j'ai trouvé le job parfait en un rien de temps !",
+    "quote": "JobLinker a rendu ma recherche d'emploi beaucoup plus facile - j'ai trouvé l'emploi parfait en un rien de temps !",
     "name": "Marie Dupont",
     "position": "Spécialiste Marketing"
+  },
+  "login": {
+    "jobSeeker": "Chercheur d'Emploi",
+    "employer": "Employeur",
+    "email": "Email",
+    "password": "Mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "logIn": "Se connecter",
+    "or": "ou",
+    "signInWithGoogle": "Se connecter avec Google",
+    "signInWithLinkedIn": "Se connecter avec LinkedIn"
+  },
+  "jobSeekers": {
+    "title": "Pour les Chercheurs d'Emploi",
+    "subtitle": "Créez votre profil, construisez votre CV et trouvez les bonnes opportunités d'emploi.",
+    "tabs": {
+      "profile": "Créateur de Profil",
+      "cv": "Gestion de CV",
+      "jobs": "Offres Correspondantes"
+    },
+    "profile": {
+      "title": "Construisez Votre Profil Professionnel",
+      "description": "Créez un profil complet qui met en valeur vos compétences, votre expérience et vos aspirations professionnelles auprès des employeurs potentiels.",
+      "createButton": "Créer un Profil",
+      "imageAlt": "Interface de Création de Profil",
+      "benefits": {
+        "title": "Avantages d'un Profil Complet",
+        "item1": "Trouvez des offres d'emploi pertinentes basées sur vos compétences et préférences",
+        "item2": "Mettez en valeur votre expérience et vos qualifications pour vous démarquer auprès des employeurs",
+        "item3": "Suivez l'état de vos candidatures et gérez votre recherche d'emploi en un seul endroit"
+      }
+    },
+    "cv": {
+      "title": "Gérez Votre CV",
+      "description": "Téléchargez votre CV existant ou utilisez notre créateur de CV intégré pour créer un CV professionnel qui attire l'attention.",
+      "uploadButton": "Télécharger CV",
+      "buildButton": "Créer CV",
+      "templates": {
+        "title": "Choisissez Parmi des Modèles Professionnels",
+        "modern": "Modèle Moderne",
+        "classic": "Modèle Classique",
+        "creative": "Modèle Créatif",
+        "professional": "Modèle Professionnel"
+      }
+    },
+    "jobs": {
+      "title": "Découvrez les Opportunités d'Emploi",
+      "description": "Parcourez les offres d'emploi qui correspondent à vos compétences et à votre expérience, ou obtenez automatiquement des correspondances avec des opportunités pertinentes.",
+      "viewButton": "Voir Détails",
+      "listing1": {
+        "title": "Développeur Logiciel Senior",
+        "company": "Tech Innovations Inc.",
+        "description": "Nous recherchons un développeur logiciel expérimenté pour rejoindre notre équipe et aider à créer des applications web de pointe.",
+        "location": "Télétravail / Londres"
+      },
+      "listing2": {
+        "title": "Responsable Marketing",
+        "company": "Global Brands Ltd.",
+        "description": "Rejoignez notre équipe marketing pour développer et mettre en œuvre des stratégies marketing pour notre portefeuille croissant de produits.",
+        "location": "New York"
+      },
+      "listing3": {
+        "title": "Designer UX/UI",
+        "company": "Creative Solutions",
+        "description": "Concevez de belles interfaces utilisateur intuitives pour des applications web et mobiles en mettant l'accent sur l'expérience utilisateur.",
+        "location": "Télétravail / Berlin"
+      },
+      "listing4": {
+        "title": "Analyste de Données",
+        "company": "Data Insights Co.",
+        "description": "Analysez des ensembles de données complexes et fournissez des informations exploitables pour aider à orienter les décisions commerciales.",
+        "location": "San Francisco"
+      }
+    }
+  },
+  "employers": {
+    "title": "Pour les Employeurs",
+    "subtitle": "Publiez des offres d'emploi, trouvez des candidats qualifiés et gérez efficacement votre processus de recrutement.",
+    "tabs": {
+      "post": "Publier des Offres",
+      "candidates": "Trouver des Candidats",
+      "dashboard": "Tableau de Bord"
+    },
+    "post": {
+      "title": "Publiez des Offres d'Emploi",
+      "description": "Créez des annonces d'emploi détaillées pour attirer des candidats qualifiés qui correspondent à vos exigences.",
+      "createButton": "Créer une Offre",
+      "benefits": {
+        "title": "Avantages de la Publication d'Offres",
+        "item1": "Atteignez des milliers de candidats qualifiés qui recherchent activement de nouvelles opportunités",
+        "item2": "Utilisez notre système de correspondance intelligent pour trouver le candidat parfait pour votre équipe",
+        "item3": "Gérez les candidatures et suivez la progression des candidats en un seul endroit"
+      },
+      "form": {
+        "title": "Créer une Offre d'Emploi",
+        "jobTitle": "Titre du Poste",
+        "jobDescription": "Description du Poste",
+        "location": "Lieu",
+        "submitButton": "Publier l'Offre"
+      }
+    },
+    "candidates": {
+      "title": "Trouvez des Candidats Qualifiés",
+      "description": "Recherchez dans notre base de données de candidats qualifiés et filtrez par compétences, expérience et lieu.",
+      "searchButton": "Rechercher des Candidats",
+      "filters": {
+        "title": "Filtrer les Candidats",
+        "skills": "Compétences",
+        "skillsPlaceholder": "ex. JavaScript, React, Gestion de Projet",
+        "experience": "Niveau d'Expérience",
+        "any": "Toute Expérience",
+        "entry": "Niveau Débutant",
+        "mid": "Niveau Intermédiaire",
+        "senior": "Niveau Senior",
+        "location": "Lieu",
+        "locationPlaceholder": "Ville, Pays ou Télétravail",
+        "applyButton": "Appliquer les Filtres"
+      }
+    },
+    "dashboard": {
+      "title": "Tableau de Bord Employeur",
+      "description": "Suivez vos offres d'emploi, les candidatures et les interactions avec les candidats en un seul endroit.",
+      "stats": {
+        "activeJobs": "Offres Actives",
+        "applications": "Candidatures",
+        "interviews": "Entretiens"
+      },
+      "recentJobs": {
+        "title": "Offres d'Emploi Récentes",
+        "jobTitle": "Titre du Poste",
+        "applicants": "Candidats",
+        "status": "Statut",
+        "posted": "Date de Publication",
+        "job1": {
+          "title": "Ingénieur Logiciel Senior",
+          "applicants": "12 candidats",
+          "status": "Actif",
+          "posted": "Il y a 2 jours"
+        },
+        "job2": {
+          "title": "Spécialiste Marketing",
+          "applicants": "8 candidats",
+          "status": "En Révision",
+          "posted": "Il y a 1 semaine"
+        },
+        "job3": {
+          "title": "Designer UX",
+          "applicants": "7 candidats",
+          "status": "Nouveau",
+          "posted": "À l'instant"
+        }
+      }
+    }
+  },
+  "testimonialsPage": {
+    "title": "Ce que Disent Nos Utilisateurs",
+    "subtitle": "Écoutez les chercheurs d'emploi et les employeurs qui ont réussi avec JobLinker.",
+    "filters": {
+      "all": "Tous les Témoignages",
+      "jobSeekers": "Chercheurs d'Emploi",
+      "employers": "Employeurs"
+    },
+    "labels": {
+      "jobSeeker": "Chercheur d'Emploi",
+      "employer": "Employeur"
+    },
+    "submitSection": {
+      "title": "Partagez Votre Expérience",
+      "description": "Nous aimerions connaître votre expérience avec JobLinker. Vos commentaires nous aident à améliorer notre plateforme.",
+      "button": "Soumettre un Témoignage"
+    },
+    "testimonials": {
+      "1": {
+        "name": "Sarah Johnson",
+        "position": "Développeuse Logiciel",
+        "company": "TechCorp",
+        "quote": "JobLinker m'a aidée à trouver mon emploi de rêve en seulement deux semaines ! L'algorithme de correspondance est incroyablement précis, et j'ai reçu des entretiens d'entreprises qui correspondaient parfaitement à mes compétences et objectifs de carrière."
+      },
+      "2": {
+        "name": "Michel Rodriguez",
+        "position": "Directeur des RH",
+        "company": "Innovations Globales",
+        "quote": "En tant qu'employeur, trouver des candidats qualifiés n'a jamais été aussi facile. La plateforme JobLinker nous permet d'identifier rapidement les talents qui correspondent à nos exigences spécifiques. Elle a considérablement réduit notre temps de recrutement."
+      },
+      "3": {
+        "name": "Émilie Chen",
+        "position": "Spécialiste Marketing",
+        "company": "Creative Media",
+        "quote": "L'outil de création de CV est fantastique ! Il m'a aidée à créer un CV professionnel qui se démarque auprès des employeurs. Quelques jours après avoir téléchargé mon profil, j'ai reçu plusieurs demandes d'entretien."
+      },
+      "4": {
+        "name": "David Thompson",
+        "position": "Responsable Recrutement",
+        "company": "Tech Solutions Ltd",
+        "quote": "JobLinker a transformé notre processus de recrutement. La qualité des candidats que nous trouvons via la plateforme est constamment élevée, et le tableau de bord facilite le suivi des candidatures."
+      },
+      "5": {
+        "name": "Aisha Patel",
+        "position": "Analyste de Données",
+        "company": "Analytics Pro",
+        "quote": "Après avoir lutté pendant des mois dans ma recherche d'emploi, JobLinker m'a mise en relation avec des opportunités que je n'aurais pas trouvées ailleurs. Les correspondances d'emploi personnalisées m'ont fait gagner d'innombrables heures de recherche."
+      },
+      "6": {
+        "name": "Robert Wilson",
+        "position": "PDG",
+        "company": "Startup Ventures",
+        "quote": "Pour une entreprise en croissance comme la nôtre, trouver les bons talents est crucial. JobLinker a été un outil essentiel pour nous aider à constituer notre équipe avec des professionnels qualifiés qui partagent notre vision."
+      }
+    }
   },
   "footer": {
     "joblinker": "JobLinker",

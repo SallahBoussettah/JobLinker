@@ -46,6 +46,215 @@
     "name": "Jane Doe",
     "position": "Marketing Specialist"
   },
+  "login": {
+    "jobSeeker": "Job Seeker",
+    "employer": "Employer",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "logIn": "Log In",
+    "or": "or",
+    "signInWithGoogle": "Sign in with Google",
+    "signInWithLinkedIn": "Sign in with LinkedIn"
+  },
+  "jobSeekers": {
+    "title": "For Job Seekers",
+    "subtitle": "Create your profile, build your CV, and get matched with the right job opportunities.",
+    "tabs": {
+      "profile": "Profile Builder",
+      "cv": "CV Management",
+      "jobs": "Job Matches"
+    },
+    "profile": {
+      "title": "Build Your Professional Profile",
+      "description": "Create a comprehensive profile that showcases your skills, experience, and career aspirations to potential employers.",
+      "createButton": "Create Profile",
+      "imageAlt": "Profile Builder Interface",
+      "benefits": {
+        "title": "Benefits of a Complete Profile",
+        "item1": "Get matched with relevant job opportunities based on your skills and preferences",
+        "item2": "Highlight your experience and qualifications to stand out to employers",
+        "item3": "Track your application status and manage your job search in one place"
+      }
+    },
+    "cv": {
+      "title": "Manage Your CV",
+      "description": "Upload your existing CV or use our built-in CV builder to create a professional resume that gets noticed.",
+      "uploadButton": "Upload CV",
+      "buildButton": "Build CV",
+      "templates": {
+        "title": "Choose from Professional Templates",
+        "modern": "Modern Template",
+        "classic": "Classic Template",
+        "creative": "Creative Template",
+        "professional": "Professional Template"
+      }
+    },
+    "jobs": {
+      "title": "Discover Job Opportunities",
+      "description": "Browse through job listings that match your skills and experience, or get automatically matched with relevant opportunities.",
+      "viewButton": "View Details",
+      "listing1": {
+        "title": "Senior Software Developer",
+        "company": "Tech Innovations Inc.",
+        "description": "We're looking for an experienced software developer to join our team and help build cutting-edge web applications.",
+        "location": "Remote / London"
+      },
+      "listing2": {
+        "title": "Marketing Manager",
+        "company": "Global Brands Ltd.",
+        "description": "Join our marketing team to develop and implement marketing strategies for our growing portfolio of products.",
+        "location": "New York"
+      },
+      "listing3": {
+        "title": "UX/UI Designer",
+        "company": "Creative Solutions",
+        "description": "Design beautiful and intuitive user interfaces for web and mobile applications with a focus on user experience.",
+        "location": "Remote / Berlin"
+      },
+      "listing4": {
+        "title": "Data Analyst",
+        "company": "Data Insights Co.",
+        "description": "Analyze complex data sets and provide actionable insights to help drive business decisions.",
+        "location": "San Francisco"
+      }
+    }
+  },
+  "employers": {
+    "title": "For Employers",
+    "subtitle": "Post job opportunities, find qualified candidates, and manage your recruitment process efficiently.",
+    "tabs": {
+      "post": "Post Jobs",
+      "candidates": "Find Candidates",
+      "dashboard": "Dashboard"
+    },
+    "post": {
+      "title": "Post Job Opportunities",
+      "description": "Create detailed job listings to attract qualified candidates that match your requirements.",
+      "createButton": "Create Job Post",
+      "benefits": {
+        "title": "Benefits of Posting Jobs",
+        "item1": "Reach thousands of qualified candidates actively looking for new opportunities",
+        "item2": "Use our intelligent matching system to find the perfect fit for your team",
+        "item3": "Manage applications and track candidate progress in one place"
+      },
+      "form": {
+        "title": "Create a Job Posting",
+        "jobTitle": "Job Title",
+        "jobDescription": "Job Description",
+        "location": "Location",
+        "submitButton": "Post Job"
+      }
+    },
+    "candidates": {
+      "title": "Find Qualified Candidates",
+      "description": "Search our database of qualified candidates and filter by skills, experience, and location.",
+      "searchButton": "Search Candidates",
+      "filters": {
+        "title": "Filter Candidates",
+        "skills": "Skills",
+        "skillsPlaceholder": "e.g. JavaScript, React, Project Management",
+        "experience": "Experience Level",
+        "any": "Any Experience",
+        "entry": "Entry Level",
+        "mid": "Mid Level",
+        "senior": "Senior Level",
+        "location": "Location",
+        "locationPlaceholder": "City, Country or Remote",
+        "applyButton": "Apply Filters"
+      }
+    },
+    "dashboard": {
+      "title": "Employer Dashboard",
+      "description": "Track your job postings, applications, and candidate interactions all in one place.",
+      "stats": {
+        "activeJobs": "Active Jobs",
+        "applications": "Applications",
+        "interviews": "Interviews"
+      },
+      "recentJobs": {
+        "title": "Recent Job Postings",
+        "jobTitle": "Job Title",
+        "applicants": "Applicants",
+        "status": "Status",
+        "posted": "Posted Date",
+        "job1": {
+          "title": "Senior Software Engineer",
+          "applicants": "12 applicants",
+          "status": "Active",
+          "posted": "2 days ago"
+        },
+        "job2": {
+          "title": "Marketing Specialist",
+          "applicants": "8 applicants",
+          "status": "Reviewing",
+          "posted": "1 week ago"
+        },
+        "job3": {
+          "title": "UX Designer",
+          "applicants": "7 applicants",
+          "status": "New",
+          "posted": "Just now"
+        }
+      }
+    }
+  },
+  "testimonialsPage": {
+    "title": "What Our Users Say",
+    "subtitle": "Hear from job seekers and employers who have found success with JobLinker.",
+    "filters": {
+      "all": "All Testimonials",
+      "jobSeekers": "Job Seekers",
+      "employers": "Employers"
+    },
+    "labels": {
+      "jobSeeker": "Job Seeker",
+      "employer": "Employer"
+    },
+    "submitSection": {
+      "title": "Share Your Experience",
+      "description": "We'd love to hear about your experience using JobLinker. Your feedback helps us improve our platform.",
+      "button": "Submit a Testimonial"
+    },
+    "testimonials": {
+      "1": {
+        "name": "Sarah Johnson",
+        "position": "Software Developer",
+        "company": "TechCorp",
+        "quote": "JobLinker helped me find my dream job in just two weeks! The matching algorithm is incredibly accurate, and I received interviews from companies that perfectly matched my skills and career goals."
+      },
+      "2": {
+        "name": "Michael Rodriguez",
+        "position": "HR Director",
+        "company": "Global Innovations",
+        "quote": "As an employer, finding qualified candidates has never been easier. JobLinker's platform allows us to quickly identify top talent that matches our specific requirements. It has significantly reduced our hiring time."
+      },
+      "3": {
+        "name": "Emily Chen",
+        "position": "Marketing Specialist",
+        "company": "Creative Media",
+        "quote": "The CV builder tool is fantastic! It helped me create a professional resume that stood out to employers. Within days of uploading my profile, I received multiple interview requests."
+      },
+      "4": {
+        "name": "David Thompson",
+        "position": "Recruitment Manager",
+        "company": "Tech Solutions Ltd",
+        "quote": "JobLinker has transformed our recruitment process. The quality of candidates we find through the platform is consistently high, and the dashboard makes it easy to track applications."
+      },
+      "5": {
+        "name": "Aisha Patel",
+        "position": "Data Analyst",
+        "company": "Analytics Pro",
+        "quote": "After struggling with my job search for months, JobLinker connected me with opportunities I wouldn't have found elsewhere. The personalized job matches saved me countless hours of searching."
+      },
+      "6": {
+        "name": "Robert Wilson",
+        "position": "CEO",
+        "company": "Startup Ventures",
+        "quote": "For a growing company like ours, finding the right talent is crucial. JobLinker has been instrumental in helping us build our team with qualified professionals who share our vision."
+      }
+    }
+  },
   "footer": {
     "joblinker": "JobLinker",
     "forSeekers": "For Seekers",

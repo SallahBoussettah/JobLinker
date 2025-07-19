@@ -1,37 +1,94 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import LogoWithTitle from '../assets/Logo+Title.png'
 import LanguageSelector from './LanguageSelector'
+import ThemeToggle from './ThemeToggle'
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
   const { t } = useTranslation()
 
+  // Handle scroll event to detect when to fix the navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
-    <nav className="bg-white border-b border-gray-100">
+    <nav 
+      className={`${isScrolled ? 'fixed top-0 left-0 right-0 shadow-md' : ''} z-50 transition-all duration-300`}
+      style={{ 
+        backgroundColor: 'var(--color-background)',
+        borderBottomWidth: '1px',
+        borderBottomColor: 'var(--color-input-border)'
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <img src={LogoWithTitle} alt="JobLinker" className="h-35 w-auto" />
+              <Link to="/" onClick={scrollToTop}>
+                <img src={LogoWithTitle} alt="JobLinker" className="h-35 w-auto" />
+              </Link>
             </div>
             <div className="hidden sm:ml-10 sm:flex sm:space-x-8">
-              <a href="#" className="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              <Link 
+                to="/job-seekers" 
+                onClick={scrollToTop} 
+                className="border-transparent hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                style={{ color: 'var(--color-text)' }}
+              >
                 {t('navbar.jobSeekers')}
-              </a>
-              <a href="#" className="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              </Link>
+              <Link 
+                to="/employers" 
+                onClick={scrollToTop} 
+                className="border-transparent hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                style={{ color: 'var(--color-text)' }}
+              >
                 {t('navbar.employers')}
-              </a>
-              <a href="#" className="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              </Link>
+              <Link 
+                to="/testimonials" 
+                onClick={scrollToTop} 
+                className="border-transparent hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                style={{ color: 'var(--color-text)' }}
+              >
                 {t('navbar.testimonials')}
-              </a>
+              </Link>
             </div>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-4">
+            <ThemeToggle />
             <LanguageSelector />
-            <a href="#" className="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+            <Link 
+              to="/login" 
+              onClick={scrollToTop} 
+              className="hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium"
+              style={{ color: 'var(--color-text)' }}
+            >
               {t('navbar.login')}
-            </a>
+            </Link>
             <a href="#" className="bg-blue-500 text-white hover:bg-blue-600 px-4 py-2 rounded-md text-sm font-medium">
               {t('navbar.postJob')}
             </a>
@@ -39,7 +96,8 @@ const Navbar = () => {
           <div className="-mr-2 flex items-center sm:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              className="inline-flex items-center justify-center p-2 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              style={{ color: 'var(--color-text)' }}
             >
               <span className="sr-only">Open main menu</span>
               {mobileMenuOpen ? (
@@ -58,27 +116,58 @@ const Navbar = () => {
 
       {/* Mobile menu, show/hide based on menu state */}
       {mobileMenuOpen && (
-        <div className="sm:hidden absolute top-16 inset-x-0 z-50 bg-white shadow-lg">
+        <div 
+          className="sm:hidden absolute top-16 inset-x-0 z-50 shadow-lg"
+          style={{ 
+            backgroundColor: 'var(--color-background)'
+          }}
+        >
           <div className="pt-2 pb-3 space-y-1">
-            <a href="#" className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800">
+            <Link 
+              to="/job-seekers" 
+              onClick={scrollToTop} 
+              className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium hover:bg-gray-50 dark:hover:bg-gray-800 hover:border-gray-300 hover:text-gray-800 dark:hover:text-gray-200"
+              style={{ color: 'var(--color-text)' }}
+            >
               {t('navbar.jobSeekers')}
-            </a>
-            <a href="#" className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800">
+            </Link>
+            <Link 
+              to="/employers" 
+              onClick={scrollToTop} 
+              className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium hover:bg-gray-50 dark:hover:bg-gray-800 hover:border-gray-300 hover:text-gray-800 dark:hover:text-gray-200"
+              style={{ color: 'var(--color-text)' }}
+            >
               {t('navbar.employers')}
-            </a>
-            <a href="#" className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800">
+            </Link>
+            <Link 
+              to="/testimonials" 
+              onClick={scrollToTop} 
+              className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium hover:bg-gray-50 dark:hover:bg-gray-800 hover:border-gray-300 hover:text-gray-800 dark:hover:text-gray-200"
+              style={{ color: 'var(--color-text)' }}
+            >
               {t('navbar.testimonials')}
-            </a>
+            </Link>
             <div className="pl-3 pr-4 py-2">
               <LanguageSelector />
             </div>
+            <div className="pl-3 pr-4 py-2">
+              <ThemeToggle />
+            </div>
           </div>
-          <div className="pt-4 pb-3 border-t border-gray-200">
+          <div 
+            className="pt-4 pb-3 border-t"
+            style={{ borderColor: 'var(--color-input-border)' }}
+          >
             <div className="flex items-center px-4 space-x-3">
-              <a href="#" className="block text-base font-medium text-gray-500 hover:text-gray-800">
+              <Link 
+                to="/login" 
+                onClick={scrollToTop} 
+                className="block text-base font-medium hover:text-gray-800 dark:hover:text-gray-200"
+                style={{ color: 'var(--color-text)' }}
+              >
                 {t('navbar.login')}
-              </a>
-              <a href="#" className="block text-base font-medium bg-blue-500 text-white px-4 py-2 rounded-md">
+              </Link>
+              <a href="#" className="block text-base font-medium bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
                 {t('navbar.postJob')}
               </a>
             </div>
