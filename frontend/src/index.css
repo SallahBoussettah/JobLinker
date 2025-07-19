@@ -97,6 +97,11 @@ html.rtl .lg\:mx-0 {
   html.rtl .lg\:grid-cols-12 {
     column-gap: 2rem;
   }
+  
+  /* Ensure proper spacing in Arabic desktop view */
+  html.rtl .lg\:gap-8 {
+    gap: 2rem;
+  }
 }
 
 /* Specific class for RTL button alignment */
@@ -108,6 +113,90 @@ html.rtl .lg\:mx-0 {
   text-align: right;
 }
 
+/* RTL grid and image positioning */
+.rtl-grid {
+  column-gap: 3rem !important;
+}
+
+.rtl-image {
+  padding-right: 1rem;
+}
+
+/* Mobile and tablet centering for RTL */
+@media (max-width: 1023px) {
+  html.rtl .text-center {
+    text-align: center !important;
+  }
+  
+  html.rtl .rtl-text {
+    text-align: center !important;
+  }
+  
+  /* Force center alignment for all text in mobile/tablet */
+  html.rtl p {
+    text-align: center !important;
+  }
+  
+  html.rtl .sm\:mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Tablet view (640px to 1023px) - center buttons */
+@media (min-width: 640px) and (max-width: 1023px) {
+  html.rtl .rtl-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  html.rtl .rtl-buttons .flex {
+    justify-content: center !important;
+    flex-direction: row;
+    width: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  html.rtl .sm\:justify-end {
+    justify-content: center !important;
+  }
+  
+  html.rtl .sm\:flex-row {
+    justify-content: center !important;
+  }
+  
+  /* Fix paragraph alignment in tablet view */
+  html.rtl .sm\:text-lg {
+    text-align: center !important;
+  }
+  
+  html.rtl .sm\:max-w-xl.sm\:mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}
+
+/* Mobile view (below 640px) - stack buttons */
+@media (max-width: 639px) {
+  html.rtl .rtl-buttons .flex {
+    flex-direction: column !important;
+    width: 100%;
+  }
+  
+  html.rtl .rtl-buttons .flex a {
+    width: 100%;
+  }
+  
+  html.rtl .sm\:flex-row {
+    flex-direction: column !important;
+  }
+}
+
 @media (min-width: 1024px) {
   .rtl-buttons .flex {
     justify-content: flex-end !important;
@@ -116,10 +205,6 @@ html.rtl .lg\:mx-0 {
   html.rtl .rtl-buttons .flex {
     justify-content: flex-end !important;
     flex-direction: row-reverse;
-  }
-  
-  html.rtl .sm\:justify-end.lg\:justify-end {
-    justify-content: flex-end !important;
   }
 }
 
@@ -132,40 +217,13 @@ html.rtl .sm\:justify-center.lg\:justify-start {
   justify-content: flex-end;
 }
 
-/* Fix button container alignment in RTL */
-html.rtl .sm\:max-w-lg.sm\:mx-auto.text-center.lg\:text-left.lg\:mx-0 {
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-/* Mobile and tablet view centering for RTL */
-@media (max-width: 1023px) {
-  html.rtl .text-center {
-    text-align: center !important;
+/* Mobile view button styling */
+@media (max-width: 639px) {
+  .flex.flex-col.sm\:flex-row {
+    flex-direction: column !important;
   }
   
-  html.rtl .rtl-text {
-    text-align: center !important;
-  }
-  
-  html.rtl .sm\:mx-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-  
-  html.rtl .rtl-buttons {
-    align-items: center !important;
-  }
-  
-  html.rtl .sm\:justify-end {
-    justify-content: center !important;
-  }
-  
-  html.rtl .sm\:max-w-lg.sm\:mx-auto.text-center.lg\:text-left.lg\:mx-0 {
-    align-items: center;
+  .flex.flex-col.sm\:flex-row a {
+    width: 100%;
   }
 }
